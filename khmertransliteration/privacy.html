@@ -133,7 +133,7 @@
     <ul>
       <li>Keystrokes or any text you type in other apps</li>
       <li>Personal information (name, email, location, etc.)</li>
-      <li>Device identifiers or IP addresses for tracking purposes</li>
+      <li>Device identifiers or IP addresses (server logs may temporarily record your IP address as part of normal web request handling, but it is not stored persistently or used for tracking)</li>
       <li>Any data from the keyboard outside of explicit word submissions</li>
     </ul>
 
@@ -141,7 +141,7 @@
     <p>Word submissions are used solely to improve the Khmer transliteration model. They may be reviewed, aggregated, and incorporated into training data. Submissions are not sold, shared with third parties, or used for advertising.</p>
 
     <h2>Keyboard Privacy</h2>
-    <p>The keyboard extension requests Full Access solely to send word submissions you explicitly add via the "Add Word" feature. Full Access is not used to monitor, record, or transmit any other keystrokes. Normal typing through the keyboard is processed entirely on your device and is never recorded or transmitted.</p>
+    <p>The app requests network access (iOS: Full Access; Android: INTERNET permission) solely to send word submissions you explicitly add via the "Add Word" feature. This access is not used to monitor, record, or transmit any other keystrokes. Normal typing through the keyboard is processed entirely on your device and is never recorded or transmitted.</p>
 
     <h2>Local Storage</h2>
     <p>Submitted word pairs are also stored locally on your device to provide immediate personalized suggestions. This data remains on your device and can be cleared by removing the app.</p>
@@ -157,9 +157,14 @@
       </thead>
       <tbody>
         <tr>
-          <td>Apple StoreKit</td>
+          <td>Apple StoreKit (iOS)</td>
           <td>Optional tips ("Buy Me a Coffee")</td>
           <td>Handled entirely by Apple</td>
+        </tr>
+        <tr>
+          <td>Google Play Billing (Android)</td>
+          <td>Optional tips ("Buy Me a Coffee")</td>
+          <td>Handled entirely by Google</td>
         </tr>
       </tbody>
     </table>
